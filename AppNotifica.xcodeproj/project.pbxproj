@@ -17,6 +17,10 @@
 		41239EA528F840EE00D92C31 /* AppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EA428F840EE00D92C31 /* AppNotificaTests.swift */; };
 		41239EAF28F840EE00D92C31 /* AppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */; };
 		41239EB128F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */; };
+		C403B4862A41DC1400A720ED /* Coordenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403B4852A41DC1400A720ED /* Coordenator.swift */; };
+		C403B4882A41DC8500A720ED /* LoginCoordenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403B4872A41DC8500A720ED /* LoginCoordenator.swift */; };
+		C403B48B2A41DE8300A720ED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403B48A2A41DE8300A720ED /* LoginView.swift */; };
+		C403B48D2A41DE9900A720ED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403B48C2A41DE9900A720ED /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		41239EAA28F840EE00D92C31 /* AppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITests.swift; sourceTree = "<group>"; };
 		41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C403B4852A41DC1400A720ED /* Coordenator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordenator.swift; sourceTree = "<group>"; };
+		C403B4872A41DC8500A720ED /* LoginCoordenator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordenator.swift; sourceTree = "<group>"; };
+		C403B48A2A41DE8300A720ED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C403B48C2A41DE9900A720ED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +109,9 @@
 		41239E8928F840EA00D92C31 /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
-				41239E8A28F840EA00D92C31 /* AppDelegate.swift */,
-				41239E8C28F840EA00D92C31 /* SceneDelegate.swift */,
-				41239E8E28F840EA00D92C31 /* ViewController.swift */,
-				41239E9028F840EA00D92C31 /* Main.storyboard */,
-				41239E9628F840ED00D92C31 /* Assets.xcassets */,
-				41239E9828F840ED00D92C31 /* LaunchScreen.storyboard */,
+				C403B4892A41DE4500A720ED /* Controller */,
+				C403B4842A41DBEF00A720ED /* Coordenator */,
+				C403B4832A41D99500A720ED /* Resourse */,
 				41239E9B28F840ED00D92C31 /* Info.plist */,
 				41239E9328F840EB00D92C31 /* AppNotifica.xcdatamodeld */,
 			);
@@ -128,6 +133,37 @@
 				41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */,
 			);
 			path = AppNotificaUITests;
+			sourceTree = "<group>";
+		};
+		C403B4832A41D99500A720ED /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				41239E9828F840ED00D92C31 /* LaunchScreen.storyboard */,
+				41239E9628F840ED00D92C31 /* Assets.xcassets */,
+				41239E9028F840EA00D92C31 /* Main.storyboard */,
+				41239E8E28F840EA00D92C31 /* ViewController.swift */,
+				41239E8C28F840EA00D92C31 /* SceneDelegate.swift */,
+				41239E8A28F840EA00D92C31 /* AppDelegate.swift */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		C403B4842A41DBEF00A720ED /* Coordenator */ = {
+			isa = PBXGroup;
+			children = (
+				C403B4852A41DC1400A720ED /* Coordenator.swift */,
+				C403B4872A41DC8500A720ED /* LoginCoordenator.swift */,
+			);
+			path = Coordenator;
+			sourceTree = "<group>";
+		};
+		C403B4892A41DE4500A720ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C403B48A2A41DE8300A720ED /* LoginView.swift */,
+				C403B48C2A41DE9900A720ED /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
+				C403B48B2A41DE8300A720ED /* LoginView.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
+				C403B48D2A41DE9900A720ED /* LoginViewController.swift in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
+				C403B4882A41DC8500A720ED /* LoginCoordenator.swift in Sources */,
+				C403B4862A41DC1400A720ED /* Coordenator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
